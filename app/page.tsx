@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <>
-      <p>{response} está é a mensagem</p>
+      <p>{response}</p>
     </>
   )
 }
