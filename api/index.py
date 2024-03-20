@@ -25,11 +25,11 @@ def consulting_product():
         produtos = soup.find_all('div', class_=re.compile('productCard'))
         for produto in produtos:
                 marca = produto.find('span', class_=re.compile('nameCard')).get_text().strip()
-                preco = produto.find('span', class_=re.compile('priceCard')) 
+                preco = produto.find('span', class_=re.compile('priceCard')) .get_text().strip()
     
                 print(marca)
                 print(preco)
-        
+         
         '''
         qtd_items = soup.find('div', id="listingCount").get_text().strip()
         index = qtd_items.find(' ')

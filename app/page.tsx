@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react"
 export default function Home() {
 
   const [response, setResponse] = useState()
-  const [data, setData] = useState([])
+ 
 
   async function hello() {
     const hello:any = await fetch(`/api/consultproduct`, {
@@ -20,7 +20,7 @@ export default function Home() {
       ).catch(err => console.error(err))
 
       setResponse(hello.message)
-      setData(hello.data)
+ 
   }
 
   useEffect(() => {
@@ -30,11 +30,7 @@ export default function Home() {
   return (
     <>
       <p>{response}</p>
-      <ul>
-        {data.map((element:any) => (
-          <li>{element.marca}</li>
-        ))}
-      </ul>
+ 
     </>
   )
 }
