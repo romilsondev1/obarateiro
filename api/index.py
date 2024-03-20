@@ -14,7 +14,7 @@ print('___api started____')
 def consulting_product():
     try:
         #started navegation
-        chrome_options = Options()
+        chrome_options = webdriver.ChromeOptions()
         #desabled open to navigation
         chrome_options.add_argument('--headless=new')
         #configure driver
