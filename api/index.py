@@ -82,7 +82,8 @@ def consulting_product():
             'message': 'final da chamada api',
             'data': lista_produtos
         })
-    except error as error: 
+    except error as error:
+         driver.quit() 
          print(error)
 
 if __name__ == '__main__':
