@@ -14,11 +14,11 @@ print('___api started____')
 def consulting_product():
     try:
         #started navegation
-        chrome_options = webdriver.ChromeOptions()
+        #chrome_options = webdriver.ChromeOptions()
         #desabled open to navigation
-        chrome_options.add_argument('--headless=new')
+        #chrome_options.add_argument('--headless=new')
         #configure driver
-        driver = webdriver.Chrome(options=chrome_options)
+        driver = webdriver.Chrome('/path/to/chromedriver')
 
         base_url = 'https://www.kabum.com.br/espaco-gamer/cadeiras-gamer?page_number=1&page_size=20&facet_filters=&sort=price'
 
